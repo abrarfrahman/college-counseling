@@ -1,0 +1,134 @@
+import React from 'react';
+
+const HandDrawnAccents = () => {
+  return (
+    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden opacity-30 dark:opacity-20">
+      {/* Hand-drawn SVG elements */}
+      <svg 
+        className="absolute top-0 right-0 w-full h-full"
+        viewBox="0 0 1920 1080"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        {/* Squiggly underlines */}
+        <path 
+          d="M300,200 Q320,220 340,200 Q360,180 380,200 Q400,220 420,200 Q440,180 460,200" 
+          fill="none" 
+          stroke="rgba(217, 119, 6, 0.4)" 
+          strokeWidth="3"
+          strokeLinecap="round"
+          className="animate-pulse-slow"
+        />
+        
+        <path 
+          d="M1200,300 Q1220,320 1240,300 Q1260,280 1280,300 Q1300,320 1320,300 Q1340,280 1360,300" 
+          fill="none" 
+          stroke="rgba(217, 119, 6, 0.3)" 
+          strokeWidth="3"
+          strokeLinecap="round"
+          className="animate-pulse-slow animation-delay-2000"
+        />
+        
+        {/* Hand-drawn circles */}
+        <circle 
+          cx="500" 
+          cy="400" 
+          r="80" 
+          fill="none" 
+          stroke="rgba(217, 119, 6, 0.2)" 
+          strokeWidth="2"
+          strokeDasharray="10,5"
+          className="animate-spin-slow"
+        />
+        
+        <circle 
+          cx="1400" 
+          cy="700" 
+          r="100" 
+          fill="none" 
+          stroke="rgba(217, 119, 6, 0.15)" 
+          strokeWidth="2"
+          strokeDasharray="15,5"
+          className="animate-spin-slow animation-delay-3000"
+        />
+        
+        {/* Sketchy arrows */}
+        <path 
+          d="M800,500 L900,500 L880,480 M900,500 L880,520" 
+          fill="none" 
+          stroke="rgba(217, 119, 6, 0.25)" 
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="animate-bounce-slow"
+        />
+        
+        <path 
+          d="M1000,800 L1100,800 L1080,780 M1100,800 L1080,820" 
+          fill="none" 
+          stroke="rgba(217, 119, 6, 0.2)" 
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="animate-bounce-slow animation-delay-1000"
+        />
+        
+        {/* Dotted lines */}
+        <path 
+          d="M200,900 L400,900" 
+          fill="none" 
+          stroke="rgba(217, 119, 6, 0.3)" 
+          strokeWidth="2"
+          strokeDasharray="5,10"
+          className="animate-dash"
+        />
+        
+        <path 
+          d="M1500,200 L1700,200" 
+          fill="none" 
+          stroke="rgba(217, 119, 6, 0.25)" 
+          strokeWidth="2"
+          strokeDasharray="5,10"
+          className="animate-dash animation-delay-2000"
+        />
+        
+        {/* Scribble highlights */}
+        <path 
+          d="M600,300 C620,280 640,320 660,300 C680,280 700,320 720,300" 
+          fill="none" 
+          stroke="rgba(217, 119, 6, 0.3)" 
+          strokeWidth="3"
+          strokeLinecap="round"
+          className="animate-pulse-slow"
+        />
+        
+        <path 
+          d="M1200,600 C1220,580 1240,620 1260,600 C1280,580 1300,620 1320,600" 
+          fill="none" 
+          stroke="rgba(217, 119, 6, 0.25)" 
+          strokeWidth="3"
+          strokeLinecap="round"
+          className="animate-pulse-slow animation-delay-3000"
+        />
+        
+        {/* Hand-drawn stars */}
+        <path 
+          d="M300,700 L320,750 L280,720 L320,720 L280,750 Z" 
+          fill="none" 
+          stroke="rgba(217, 119, 6, 0.3)" 
+          strokeWidth="2"
+          className="animate-pulse-slow"
+        />
+        
+        <path 
+          d="M1600,400 L1620,450 L1580,420 L1620,420 L1580,450 Z" 
+          fill="none" 
+          stroke="rgba(217, 119, 6, 0.25)" 
+          strokeWidth="2"
+          className="animate-pulse-slow animation-delay-2000"
+        />
+      </svg>
+    </div>
+  );
+};
+
+export default HandDrawnAccents;
