@@ -14,7 +14,7 @@ const HumbleHero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
             <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-amber-800 dark:text-amber-500 leading-tight">
-              Helping Students Find Their Path
+              Helping Students Find Their Path{" "}
               <span className="relative inline-block">
                 <span className="relative z-10">to Success</span>
                 <svg className="absolute -bottom-2 left-0 w-full h-3 text-amber-300/60 dark:text-amber-700/60 z-0" viewBox="0 0 100 15" preserveAspectRatio="none">
@@ -41,7 +41,7 @@ const HumbleHero = () => {
               <div className="flex items-center">
                 <div className="h-10 w-10 rounded-full overflow-hidden border-2 border-amber-500 mr-3">
                   <img 
-                    src="/images/profile.jpeg" 
+                    src="/images/profile-irl.jpeg" 
                     alt="Abrar" 
                     className="h-full w-full object-cover"
                   />

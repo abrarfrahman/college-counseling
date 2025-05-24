@@ -80,17 +80,31 @@ const TutorSourceForm = () => {
         throw new Error('Please select at least one subject you need help with');
       }
       
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Google Forms submission
+      const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSerkthjJvNLrP3FpqPYlfOEQOH_b9JMpRvWyfD-QSjxvi8bUg'; // Replace with your actual Google Form URL
       
-      // Here you would normally send to your API
-      // await fetch('https://api.abrarrahman.com/tutoring-leads', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData)
-      // });
+      // Create form data for Google Forms
+      const googleFormData = new FormData();
       
-      console.log('Form submitted:', formData);
+      // Map  form fields to Google Forms entry IDs
+      googleFormData.append('entry.1606181849', formData.name); // Name field
+      googleFormData.append('entry.734708561', formData.email); // Email field
+      googleFormData.append('entry.1820919140', formData.phone); // Phone field
+      googleFormData.append('entry.479290569', formData.grade); // Grade field
+      googleFormData.append('entry.669585931', formData.subjects.join(', ')); // Subjects as comma-separated string
+      googleFormData.append('entry.1380773357', formData.goals); // Goals field
+      googleFormData.append('entry.1572026227', formData.preferredTime); // Preferred time field
+      
+      // Submit to Google Forms
+      const response = await fetch(GOOGLE_FORM_URL, {
+        method: 'POST',
+        mode: 'no-cors', // Required for Google Forms
+        body: googleFormData
+      });
+      
+      // Note: With no-cors mode, we can't check response status
+      // Google Forms will always appear to succeed from our perspective
+      console.log('Form submitted to Google Forms:', formData);
       setSubmitSuccess(true);
       
       // Reset form
@@ -104,7 +118,9 @@ const TutorSourceForm = () => {
         preferredTime: ''
       });
       setSelectedSubject('');
+      
     } catch (error) {
+      console.error('Error submitting form:', error);
       setSubmitError(error instanceof Error ? error.message : 'There was an error submitting your request. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -113,7 +129,7 @@ const TutorSourceForm = () => {
   
   return (
     <div className="tutor-form">
-      <h1>Get Started with Tutoring</h1>
+      <h3>Get Started with Tutoring</h3>
       <p style={{ marginBottom: '32px', color: '#6b7280', fontSize: '16px' }}>
         Tell us a bit about yourself and what you'd like to work on. We'll match you with the perfect tutor!
       </p>
