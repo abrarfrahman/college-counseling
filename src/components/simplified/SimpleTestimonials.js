@@ -3,35 +3,35 @@ import { useState, useEffect } from 'react';
 const SimpleTestimonials = () => {
     const testimonials = [
         {
-            text: "Abrar's guidance transformed my college essays. I felt confident telling my story and got into my top choice!",
-            name: "Jenna W.",
-            role: "Student",
-            initial: "J"
-        },
-        {
-            text: "I was amazed by Abrar's professionalism and personalized approach. My son's applications stood out.",
-            name: "R. Smith",
-            role: "Parent",
-            initial: "R"
-        },
-        {
-            text: "My SAT score improved by 200 points after working with Abrar. His strategies were game-changing!",
-            name: "Michael T.",
+            text: "Abrar's guidance transformed my grad essays. I felt confident telling my story and got into my top choice!",
+            name: "Melody S.",
             role: "Student",
             initial: "M"
-        },
-        {
-            text: "The personalized attention and strategic guidance helped me secure admission to three Ivy League schools.",
-            name: "Sophia L.",
+          },
+          {
+            text: "Abrar guided me through my first ML paper as a PI. He completely changed the trajectory of my career.",
+            name: "Arnav G.",
             role: "Student",
-            initial: "S"
-        },
-        {
+            initial: "A"
+          },
+          {
+            text: "My son's SAT score improved by 200 points after working with Abrar. His strategies were game-changing!",
+            name: "Qiuming X.",
+            role: "Student",
+            initial: "Q"
+          },
+          {
+            text: "With Abrar's help, my sister got into every target she dreamed of — and helped us pick the right one.",
+            name: "Ranesh P.",
+            role: "Brother",
+            initial: "R"
+          },
+          {
             text: "Abrar has a unique ability to bring out the best in students. The confidence my daughter gained was priceless.",
             name: "David K.",
             role: "Parent",
             initial: "D"
-        }
+          }
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
     // Auto-scroll testimonials
