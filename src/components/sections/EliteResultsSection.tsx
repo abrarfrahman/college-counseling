@@ -7,23 +7,23 @@ interface EliteResultsSectionProps {
 const EliteResultsSection: React.FC<EliteResultsSectionProps> = ({ id }) => {
   const eliteStats = [
     {
-      metric: "94%",
-      description: "of students admitted to Ivy League or equivalent institutions"
+      metric: "100-300",
+      description: "Point SAT improvements are typical with focused preparation"
     },
     {
-      metric: "100%",
-      description: "acceptance rate for students completing our full program"
+      metric: "85%",
+      description: "Of students land internships when they frame projects right"
     },
     {
-      metric: "$2.8M+",
-      description: "in merit scholarships secured by our students last year"
-    }
+      metric: "Your Story",
+      description: "Essays that sound like you actually wrote them, not a consultant or ChatGPT"
+    },
   ];
 
   const eliteUniversities = [
-    "Harvard", "Stanford", "MIT", "Yale", "Princeton", 
+    "UC Berkeley", "Stanford", "MIT", "Yale", "Princeton", 
     "Columbia", "UPenn", "Brown", "Dartmouth", "Cornell",
-    "Duke", "Caltech", "Northwestern", "Johns Hopkins", "UC Berkeley"
+    "Duke", "Caltech", "Northwestern", "Johns Hopkins"
   ];
 
   return (

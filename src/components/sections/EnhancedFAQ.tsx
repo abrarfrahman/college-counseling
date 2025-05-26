@@ -17,34 +17,44 @@ const EnhancedFAQ: React.FC<EnhancedFAQProps> = ({ id }) => {
   
   const faqItems: FAQItem[] = [
     {
-      question: "What makes your tutoring approach different from others?",
-      answer: "Our approach is fundamentally different because we focus on developing elite cognitive frameworks rather than simply teaching content. We've refined our methodology through years of experience with Ivy League admissions, emphasizing critical thinking, strategic problem-solving, and intellectual curiosity—the exact qualities that top universities seek. Unlike typical programs, we provide personalized mentorship from someone with direct experience in elite academic environments.",
-      category: 'process'
+      "question": "What makes your coaching approach different from others?",
+      "answer": "I focus on helping students tell their authentic stories rather than trying to fit them into a mold. Having gone through the process myself and helped friends navigate it, I've learned that the best applications showcase who you genuinely are. I combine my test-taking strategies with personalized essay guidance to help students present their strongest, most authentic selves.",
+      "category": "process"
     },
     {
-      question: "What is your success rate for Ivy League admissions?",
-      answer: "Our students have achieved a 94% acceptance rate to Ivy League and equivalent elite universities, significantly outperforming national averages. This exceptional success rate stems from our comprehensive approach that addresses not just academic excellence, but the entire application profile including extracurricular development, personal narrative crafting, and interview preparation. We maintain this high standard by accepting only students whom we believe we can genuinely help succeed.",
-      category: 'results'
+      "question": "What kind of results do your students see?",
+      "answer": "I'm just starting my coaching practice, but I've helped several peers significantly improve their SAT scores and craft compelling essays. My own experience achieving a 1590 SAT and getting into Berkeley, plus my background in research and debate, gives me practical insights I can share. I'm committed to being transparent about outcomes as I build my track record.",
+      "category": "results"
     },
     {
-      question: "How selective is your tutoring program?",
-      answer: "Our program is highly selective, maintaining a limited roster to ensure personalized attention and exceptional results. We accept approximately 15% of applicants based on their potential for growth, commitment to excellence, and alignment with our teaching philosophy. This selectivity allows us to maintain our outstanding track record and dedicate sufficient resources to each student's success journey.",
-      category: 'process'
+      "question": "Do you only work with high-achieving students?",
+      "answer": "I work with motivated students at various levels. Whether you're aiming for your dream school or trying to maximize your options, I tailor my approach to your specific goals and starting point. What matters most is that you're committed to putting in the work.",
+      "category": "process"
     },
     {
-      question: "Do you offer standardized test preparation?",
-      answer: "Yes, we provide elite-level standardized test preparation as part of our comprehensive approach. Our students consistently score in the top 1% on SAT, ACT, and AP exams. However, we view test preparation as just one component of a successful college application. Our approach integrates test excellence with broader academic and personal development to create standout candidates for elite universities.",
-      category: 'admissions'
+      "question": "How do you structure your coaching sessions?",
+      "answer": "It depends on what you need most. Some students want intensive SAT prep, others need help brainstorming and drafting essays, and many want overall application strategy. We'll start with a free consultation to figure out where you are and create a plan that makes sense for your timeline and goals.",
+      "category": "process"
     },
     {
-      question: "How early should we begin working together?",
-      answer: "For optimal results, we recommend beginning our work together in the freshman or sophomore year of high school. This timeline allows us to develop a comprehensive strategy, build impressive academic credentials, and craft meaningful extracurricular involvement. However, we do accept exceptional students at later stages and have achieved remarkable results with intensive programs for juniors and seniors with strong potential.",
-      category: 'admissions'
+      "question": "When should students start working with you?",
+      "answer": "The earlier the better for comprehensive planning, but I can help at any stage. Ideally, we'd start freshman or sophomore year to build a strong foundation, but I've seen great results working with juniors and seniors too. Even a few months can make a significant difference in application quality.",
+      "category": "admissions"
     },
     {
-      question: "What is your approach to the college application process?",
-      answer: "Our approach to college applications is strategic, authentic, and comprehensive. We begin with an in-depth assessment of each student's strengths, interests, and aspirations to identify their unique value proposition. We then develop a tailored roadmap that includes academic excellence, strategic extracurricular development, compelling personal narratives, and sophisticated application execution. Throughout the process, we maintain absolute authenticity while positioning each student's achievements in the most compelling light for admissions committees.",
-      category: 'admissions'
+      "question": "Do you offer both test prep and application guidance?",
+      "answer": "Yes, I provide both SAT/ACT preparation and comprehensive application support including essay development, activity planning, and interview prep. Many students benefit from the integrated approach, but you can also work with me on specific areas like just test prep or just essays.",
+      "category": "admissions"
+    },
+    {
+      "question": "What are your rates and how do you charge?",
+      "answer": "I offer flexible pricing based on what services you need. I have hourly rates for targeted help and package deals for comprehensive support. I always start with a free 30-minute consultation to understand your needs and explain how I can help before any commitment.",
+      "category": "process"
+    },
+    {
+      "question": "Can you guarantee admission to specific schools?",
+      "answer": "No one can guarantee college admissions - the process is too competitive and unpredictable. What I can promise is that I'll help you put together the strongest possible application that authentically represents who you are. My goal is to maximize your chances while keeping expectations realistic.",
+      "category": "results"
     }
   ];
 
