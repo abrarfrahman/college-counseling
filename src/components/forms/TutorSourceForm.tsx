@@ -81,7 +81,7 @@ const TutorSourceForm = () => {
       }
       
       // Google Forms submission
-      const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSerkthjJvNLrP3FpqPYlfOEQOH_b9JMpRvWyfD-QSjxvi8bUg'; // Replace with your actual Google Form URL
+      const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSerkthjJvNLrP3FpqPYlfOEQOH_b9JMpRvWyfD-QSjxvi8bUg/formResponse'; // Replace with your actual Google Form URL
       
       // Create form data for Google Forms
       const googleFormData = new FormData();
