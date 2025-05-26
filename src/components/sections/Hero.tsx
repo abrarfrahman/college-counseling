@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-light italic mb-8 max-w-xl">
-            Unleashing standout applications from standout students.
+            From exceptional student to standout applicant • Bay Area & Remote
           </p>
           
           <div className="flex flex-wrap justify-center md:justify-start gap-4">

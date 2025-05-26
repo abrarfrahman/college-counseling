@@ -22,6 +22,11 @@ const EnhancedFAQ: React.FC<EnhancedFAQProps> = ({ id }) => {
       "category": "process"
     },
     {
+      "question": "Do you work with students outside the Bay Area?",
+      "answer": "Absolutely! While I'm based in the San Francisco Bay Area and offer in-person sessions locally, I work with students across the US and internationally. My remote students get the same personalized attention and comprehensive support. For test prep and essay coaching, location doesn't matter - we can accomplish everything online.",
+      "category": "process"
+    },
+    {
       "question": "What kind of results do your students see?",
       "answer": "I'm just starting my coaching practice, but I've helped several peers significantly improve their SAT scores and craft compelling essays. My own experience achieving a 1590 SAT and getting into Berkeley, plus my background in research and debate, gives me practical insights I can share. I'm committed to being transparent about outcomes as I build my track record.",
       "category": "results"
@@ -42,9 +47,9 @@ const EnhancedFAQ: React.FC<EnhancedFAQProps> = ({ id }) => {
       "category": "admissions"
     },
     {
-      "question": "Do you offer both test prep and application guidance?",
-      "answer": "Yes, I provide both SAT/ACT preparation and comprehensive application support including essay development, activity planning, and interview prep. Many students benefit from the integrated approach, but you can also work with me on specific areas like just test prep or just essays.",
-      "category": "admissions"
+      "question": "What's the difference between in-person and remote coaching?",
+      "answer": "The core coaching is identical whether we meet in person or online. Bay Area students have the option of meeting face-to-face, which some prefer for intensive essay sessions or test prep. Remote students often appreciate the flexibility of scheduling across time zones. Both formats include the same level of personalized attention and comprehensive support.",
+      "category": "process"
     },
     {
       "question": "What are your rates and how do you charge?",
