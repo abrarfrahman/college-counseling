@@ -48,7 +48,7 @@ const SimpleNavbar: React.FC<NavbarProps> = ({ isDarkMode, toggleDarkMode }) => 
             />
           </div>
           <span className="text-xl font-serif font-bold text-amber-600 dark:text-amber-400">
-            Abrar
+            Abrar's College Counseling
           </span>
         </div>
 

@@ -24,7 +24,7 @@ const HumbleHero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 font-light">
-              Personalized coaching for bright students who want to grow and reach their full potential.
+              From exceptional student to standout applicant • Bay Area & Remote
             </p>
             
             <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-md rounded-xl p-6 border border-amber-100 dark:border-amber-900/30 mb-8 relative">
@@ -47,7 +47,7 @@ const HumbleHero = () => {
                   />
                 </div>
                 <span className="text-lg font-serif font-semibold text-amber-700 dark:text-amber-500">
-                  Abrar
+                  Abrar R.
                 </span>
               </div>
             </div>
