@@ -41,7 +41,7 @@ const HumbleHero = () => {
               <div className="flex items-center">
                 <div className="h-10 w-10 rounded-full overflow-hidden border-2 border-amber-500 mr-3">
                   <img 
-                    src="/images/profile-irl.jpeg" 
+                    src="/images/profile.jpeg" 
                     alt="Abrar" 
                     className="h-full w-full object-cover"
                   />
@@ -110,7 +110,7 @@ const HumbleHero = () => {
             
             <div className="relative z-10 bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-xl border border-amber-100 dark:border-amber-900/30 transform rotate-1">
               <img 
-                src="/images/profile.jpeg" 
+                src="/images/profile-irl.jpeg" 
                 alt="Abrar" 
                 className="w-full h-auto rounded-xl"
               />

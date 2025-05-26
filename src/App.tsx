@@ -79,7 +79,7 @@ function App() {
           <div className="flex justify-center items-center mb-4">
             <div className="h-10 w-10 rounded-full overflow-hidden border-2 border-amber-500 mr-2">
               <img 
-                src="/images/profile.jpeg" 
+                src="/images/profile-irl.jpeg" 
                 alt="Abrar" 
                 className="h-full w-full object-cover"
               />
