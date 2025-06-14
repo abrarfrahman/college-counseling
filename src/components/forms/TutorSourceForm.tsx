@@ -81,30 +81,53 @@ const TutorSourceForm = () => {
       }
       
       // Google Forms submission
-      const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSerkthjJvNLrP3FpqPYlfOEQOH_b9JMpRvWyfD-QSjxvi8bUg/formResponse'; // Replace with your actual Google Form URL
+      const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSerkthjJvNLrP3FpqPYlfOEQOH_b9JMpRvWyfD-QSjxvi8bUg/formResponse';
       
-      // Create form data for Google Forms
-      const googleFormData = new FormData();
+      // Create URLSearchParams instead of FormData
+      const params = new URLSearchParams();
+      params.append('entry.1606181849', formData.name);
+      params.append('entry.734708561', formData.email);
+      params.append('entry.1820919140', formData.phone || '');
+      params.append('entry.479290569', formData.grade);
+      params.append('entry.669585931', formData.subjects.join(', '));
+      params.append('entry.1380773357', formData.goals);
+      params.append('entry.1572026227', formData.preferredTime || '');
       
-      // Map  form fields to Google Forms entry IDs
-      googleFormData.append('entry.1606181849', formData.name); // Name field
-      googleFormData.append('entry.734708561', formData.email); // Email field
-      googleFormData.append('entry.1820919140', formData.phone); // Phone field
-      googleFormData.append('entry.479290569', formData.grade); // Grade field
-      googleFormData.append('entry.669585931', formData.subjects.join(', ')); // Subjects as comma-separated string
-      googleFormData.append('entry.1380773357', formData.goals); // Goals field
-      googleFormData.append('entry.1572026227', formData.preferredTime); // Preferred time field
+      // Submit to Google Forms using a hidden iframe
+      const form = document.createElement('form');
+      form.method = 'POST';
+      form.action = GOOGLE_FORM_URL;
+      form.target = 'hidden-iframe';
       
-      // Submit to Google Forms
-      const response = await fetch(GOOGLE_FORM_URL, {
-        method: 'POST',
-        mode: 'no-cors', // Required for Google Forms
-        body: googleFormData
-      });
+      console.log('Creating form submission...');
       
-      // Note: With no-cors mode, we can't check response status
-      // Google Forms will always appear to succeed from our perspective
-      console.log('Form submitted to Google Forms:', formData);
+      // Create hidden iframe if it doesn't exist
+      let iframe = document.getElementById('hidden-iframe') as HTMLIFrameElement;
+      if (!iframe) {
+        console.log('Creating hidden iframe...');
+        iframe = document.createElement('iframe');
+        iframe.name = 'hidden-iframe';
+        iframe.id = 'hidden-iframe';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+      }
+      
+      // Add form fields
+      for (const [key, value] of params.entries()) {
+        console.log(`Adding field: ${key}=${value}`);
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = value;
+        form.appendChild(input);
+      }
+      
+      console.log('Submitting form...');
+      document.body.appendChild(form);
+      form.submit();
+      document.body.removeChild(form);
+      
+      console.log('Form submitted successfully');
       setSubmitSuccess(true);
       
       // Reset form
